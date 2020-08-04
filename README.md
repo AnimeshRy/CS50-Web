@@ -1,11 +1,17 @@
 # Projects from CS50 Web Programming with Python and JavaScripts
 
 ##### 2020
+
 [ ] Project 0 - Search
+
 [ ] Project 1 - Wiki
+
 [ ] Project 2 - Commerce
+
 [ ] Project 3 - Mail
+
 [ ] Project 4 - Network
+
 [ ] Final Project
 
 #### Information - 
