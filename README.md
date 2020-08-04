@@ -2,17 +2,17 @@
 
 ##### 2020
 
-[ ] Project 0 - Search
+- [ ] Project 0 - Search
 
-[ ] Project 1 - Wiki
+- [ ] Project 1 - Wiki
 
-[ ] Project 2 - Commerce
+- [ ] Project 2 - Commerce
 
-[ ] Project 3 - Mail
+- [ ] Project 3 - Mail
 
-[ ] Project 4 - Network
+- [ ] Project 4 - Network
 
-[ ] Final Project
+- [ ] Final Project
 
 #### Information - 
 
