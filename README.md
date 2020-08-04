@@ -1,4 +1,4 @@
-# Projects from CS50 Web Programming with Python and JavaScripts
+# Projects from CS50 Web Programming with Python and JavaScript
 
 ##### 2020
 
@@ -16,9 +16,7 @@
 
 #### Information - 
 
-These are projects from Harvard's CS50 Web 2020 Version. This repository will contain solutions from the course and this is only made to showcase my performance
-and I insist you don't copy these solutions blindly which will destroy the process of learning.
-
+These are projects from Harvard's CS50 Web 2020 Version. Don't copy my solutions as this is against the Academic Honesty Policy of the course. Investing your time and energy into solving the problem sets yourself is in my opinion the only way to eventual mastery. (Academic Honesty)[https://docs.cs50.net/2018/x/syllabus.html#academic-honesty]
 ###### Note - 
 
 This repository will also have projects from the 2018 course as I plan to do them later. 
