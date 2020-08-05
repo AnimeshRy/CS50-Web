@@ -2,7 +2,7 @@
 
 ##### 2020
 
-- [ ] Project 0 - Search
+- [x] Project 0 - Search
 
 - [ ] Project 1 - Wiki
 
