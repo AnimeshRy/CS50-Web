@@ -4,7 +4,7 @@
 
 - [x] Project 0 - Search
 
-- [ ] Project 1 - Wiki
+- [x] Project 1 - Wiki
 
 - [ ] Project 2 - Commerce
 
