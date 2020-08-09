@@ -1,0 +1,43 @@
+{% extends "auctions/layout.html" %}
+{% block title %}
+Auctions - {{ title }}
+{% endblock %}
+{% block body %}
+    <h2>{{ title }}</h2>
+{% if listExist %}
+<div>
+    {% for item in list %}
+    <div class="container" style="max-width:99%;">
+        <div class="row">
+            {% if item.imgURL %}
+            <div class="col-sm" style="align-items:center;">
+                <img src={{item.imgURL}} height=200vh style="padding:5px;">
+                <div class="col-sm">Category: <strong>{{ item.category }}</strong></div>
+            </div>
+            {% endif %}
+            <div class="col-sm" style="padding-left:15px;">
+                <br>
+                <h1>{{item.title}}</h1>
+                <br><br>
+                <button type="button" class="btn btn-success"><h6>Price: ${{ item.price }}</h6></button>
+                <br><br>
+                <form action="{% url 'listing' item.title %}">
+                    <button type="submit" class="btn btn-primary">View</button>
+                </form>
+            </div>
+            <div class="col-sm">
+                <p>{{item.description}} </p>
+                <div class="text-muted" style="margin-bottom: 2px;">
+                    Posted By {{ item.user }} on {{ item.uploadTime|date:"F d, Y" }}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+    <h3>No Items</h3>
+{% endif %}
+{% endblock %}

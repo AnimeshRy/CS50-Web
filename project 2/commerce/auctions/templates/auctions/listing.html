@@ -1,0 +1,72 @@
+{% extends "auctions/layout.html" %}
+{% block title %}
+    Auctions - {{  item.title  }}
+{% endblock %}
+
+{% if message %}
+    <h3 style="color:red;">{{ message }}</h3>
+{% endif %}
+
+{% block body %}
+    <div>
+        <h1>{{ item.title }}</h1>
+        {% if win %}
+            <h1>You Bidded Highest! Congrats!</h1>
+        {% endif %}
+        <img src="{{ item.imgURL }}" width="80%">
+        <h3>${{ item.price }}</h3>
+        <h4>Item Description</h4>
+        <p>{{ item.description }}</p>
+        <small><strong>Uploaded by {{ item.user }} on {{ item.uploadTime|date:"F d, Y" }}</strong></small>
+        {% if not error %}
+            {% if not own %}
+                <form action="{% url 'bid' item.title %}" method="post">
+                    {% csrf_token %}
+                    <label for="bid">Enter your bid: </label>
+                    <input type="number" min="1" step="0.01" name=bid value="{{ item.price }}">
+                    <button type="submit" class="btn btn-primary">Place Bid</button>
+                </form>
+            {% endif %}
+        {% if not watching %}
+            <form action="{% url 'watchlistAdd' item.title %}">
+                <button type="submit" class="btn btn-success">Watch</button>
+            </form>
+        {% else %}
+            <form action="{% url 'watchlistRem' item.title %}">
+                <button type="submit" class="btn btn-danger">Stop Watching</button>
+            </form>
+        {% endif %}
+        {% if own %}
+            <a href="{% url 'end' item.title %}">End your listing</a>
+        {% endif %}
+        {% if item.winner %}
+            <h6>Current Winner {{ item.winner }}</h6>
+        {% else %}
+            <h6>No Bids have been Placed Yet!</h6>
+        {% endif %}
+        
+        <form action="{% url 'comment' item.title %}" method="post">
+            {% csrf_token %}
+            <label for="comment">Comment: </label>
+            <input type="text" name="comment" placeholder="Comment if you may!">
+            <button type="submit" class="btn btn-success">Send</button>
+        </form>
+        {% endif %}
+        {% if comments %}
+        <br>
+        <h2>Comments</h2>
+        <ul>
+            {% for comment in comments %}
+            <div class="comment-box">
+                <li>
+                    {{ comment.entry }}
+                <div class="text-muted" style="font-size: x-small;">
+                    <i> Commented By {{ comment.user }} On {{ comment.added_date }}</i>
+                    </div>
+                    </li>
+            </div>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+{% endblock %}

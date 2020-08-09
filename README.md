@@ -6,7 +6,7 @@
 
 - [x] Project 1 - Wiki
 
-- [ ] Project 2 - Commerce
+- [x] Project 2 - Commerce
 
 - [ ] Project 3 - Mail
 

@@ -1,0 +1,15 @@
+{% extends "auctions/layout.html" %}
+{% block title %}
+    Auctions - Bidding Complete
+{% endblock %}
+{% block body %}
+<h1>You bid on - {{ title }}!</h1>
+<br>
+<h2>Your bid:</h2>
+<h4>Item - {{ title }}</h4>
+<h4>Amount - {{ bid }}</h4>
+
+<a href="{% url 'index' %}">
+    <h4>Go Home</h4>
+</a>
+{% endblock %}
