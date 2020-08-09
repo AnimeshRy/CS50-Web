@@ -2,11 +2,11 @@
 
 ##### 2020
 
-- [x] Project 0 - Search
+- [x] Project 0 - [Search](https://cs50.harvard.edu/web/2020/projects/1/wiki/)
 
-- [x] Project 1 - Wiki
+- [x] Project 1 - [Wiki](https://cs50.harvard.edu/web/2020/projects/0/search/)
 
-- [x] Project 2 - Commerce
+- [x] Project 2 - [Commerce](https://cs50.harvard.edu/web/2020/projects/2/commerce/)
 
 - [ ] Project 3 - Mail
 
