@@ -8,7 +8,7 @@
 
 - [x] Project 2 - [Commerce](https://cs50.harvard.edu/web/2020/projects/2/commerce/)
 
-- [ ] Project 3 - Mail
+- [x] Project 3 - [Mail](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 
 - [ ] Project 4 - Network
 

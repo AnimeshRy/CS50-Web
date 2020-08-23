@@ -1,0 +1,27 @@
+* {
+    font-family: sans-serif;
+}
+
+textarea {
+    min-height: 400px;
+}
+.Email-Container-Read {
+  padding:3px 0px 3px 3px;
+  border: 2px solid darkgrey;
+  background-color: rgb(199, 183, 183);
+  margin:3px;
+}
+.Email-Container-NotRead {
+  padding:7px 0px 0px 3px;
+  border: 2px solid darkgrey;
+  background-color: white;
+  margin:3px;
+}
+
+button {
+  margin: 3px;
+}
+
+.divider {
+  border-top: 0.5px solid grey;
+}
