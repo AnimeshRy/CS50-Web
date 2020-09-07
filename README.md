@@ -10,7 +10,7 @@
 
 - [x] Project 3 - [Mail](https://cs50.harvard.edu/web/2020/projects/3/mail/)
 
-- [ ] Project 4 - Network
+- [x] Project 4 - [Network](https://cs50.harvard.edu/web/2020/projects/4/network)
 
 - [ ] Final Project
 
