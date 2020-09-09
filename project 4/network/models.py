@@ -14,7 +14,7 @@ class Post(models.Model):
         User,  blank=True, related_name="liked_user")
 
     def __str__(self):
-        return self.user.username
+        return "{self.user.username} -> {self.post}"
 
 
 class Profile(models.Model):
@@ -25,4 +25,4 @@ class Profile(models.Model):
         User,  blank=True, related_name="following_user")
 
     def __str__(self):
-        return self.user.username
+        return "{self.user.username}"
