@@ -106,7 +106,10 @@ function load_mailbox(mailbox) {
     mailbox.charAt(0).toUpperCase() + mailbox.slice(1)
   }</h3>`;
   fetch(`/emails/${mailbox}`)
-    .then((response) => response.json())
+    .then(function (response) {
+      console.log(response.clone().json());
+      return response.json();
+    })
     .then((emails) => {
       emails.forEach((item) => {
         const element = document.createElement("div");
@@ -121,7 +124,7 @@ function load_mailbox(mailbox) {
             <b> ${item.subject} </b>
             </div>
               <div class="col-sm">
-                <p>From: ${item.sender} - ${item.timestamp}</p>
+                <p>From: <i>${item.sender}</i> - ${item.timestamp}</p>
               </div>
             </div>
           </div>`;
