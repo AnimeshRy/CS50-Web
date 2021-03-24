@@ -18,3 +18,4 @@
 
 These are projects from Harvard's CS50 Web 2020 Version. Don't copy my solutions as this is against the Academic Honesty Policy of the course. Investing your time and energy into solving the problem sets yourself is in my opinion the only way to eventual mastery. [Academic Honesty](https://docs.cs50.net/2018/x/syllabus.html#academic-honesty)
 
+[Certificate](https://certificates.cs50.io/8a682bdc-52ec-49f7-ba0e-40594e5ef03a.pdf?size=A4)
